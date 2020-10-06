@@ -1,0 +1,20 @@
+micronaut:
+  application:
+    name: micronautMicrometerSample
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+        descriptions: true
+        step: PT1M
+    enabled: true
+    binders:
+      web:
+        enabled: trues
+endpoints:
+  prometheus:
+    enabled: true
+    sensitive: false
+  metrics:
+    enabled: true
+    sensitive: false
